@@ -1,4 +1,7 @@
 theme: vv5cv
+
+# Estos colores estan representados en _variables.scss
+# cualquier cambio aquí debe ser refeljado en _variables.scss
 colors:
   - bluesaur
   - planti
@@ -13,3 +16,16 @@ colors:
   - purple
   - gris2
   - tomato
+
+profile:
+  name: My Name
+  tagline: My Tagline
+  picture: http://lorempixel.com/output/fashion-q-c-480-480-8.jpg
+  phone: +52(1) 222 000 0000
+  email: me@example.com
+  address: >-
+          The Honorable Charles W. Anderson (Dear Mr. Ambassador:)
+          Department of State
+          2050 Bamako Place
+          Washington, DC 20521-2050
+  website: https://example.com

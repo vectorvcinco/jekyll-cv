@@ -5,5 +5,14 @@
   .text-color-#{$color} {
     color: $val;
   }
+}
 
+.profile-pic {
+  border-style: solid;
+  border-width: $spacer;
+}
+
+.profile-icon {
+  height: $spacer*1.5;
+  width: $spacer*1.5;
 }

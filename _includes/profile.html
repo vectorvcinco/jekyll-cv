@@ -1,0 +1,32 @@
+<img src="{{ site.profile.picture }}" class="img-fluid rounded-circle m-3 profile-pic" alt="Profile picture">
+<ul class="list-group">
+
+  {% if site.profile.phone %}
+  <li class="list-group-item border-0">
+    {% include icon-phone.svg class="profile-icon align-middle" %}
+    {{ site.profile.phone }}
+  </li>
+  {% endif %}
+
+  {% if site.profile.email %}
+  <li class="list-group-item border-0">
+    {% include icon-at.svg class="profile-icon align-middle" %}
+    {{ site.profile.email }}
+  </li>
+  {% endif %}
+
+  {% if site.profile.address %}
+  <li class="list-group-item border-0">
+    {% include icon-marker.svg class="profile-icon align-middle" %}
+    {{ site.profile.address }}
+  </li>
+  {% endif %}
+
+  {% if site.profile.website %}
+  <li class="list-group-item border-0">
+    {% include icon-globe.svg class="profile-icon align-middle" %}
+    {{ site.profile.website }}
+  </li>
+  {% endif %}
+
+</ul>
