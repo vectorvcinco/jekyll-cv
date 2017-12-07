@@ -22,6 +22,14 @@
   width: $spacer*1.5;
 }
 
+// Name CSS
+.name {
+  hr {
+    border-top-width: $spacer/2;
+    border-color: theme-color(primary);
+  }
+}
+
 // Skill Meters CSS
 
 .skill {

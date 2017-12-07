@@ -11,6 +11,16 @@ layout: page
   </div>
   <div class="col">
 
+      <div class="text-center my-5 name">
+        <h1 class="text-uppercase">{{ site.profile.name }}</h1>
+        <hr>
+        <h3 class="text-uppercase text-secondary">{{ site.profile.tagline }}</h3>
+      </div>
+
+    <main>
+      {{ content }}
+    </main>
+
   </div>
-  {{ content }}
+
 </div>
