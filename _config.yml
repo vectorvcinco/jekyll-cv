@@ -32,20 +32,20 @@ profile:
 
 software:
   Illustrator:
-    icon: Illustrator Icon
+    icon: ai.svg
     skill: 0
   Photoshop:
-    icon: Rhinoceros Icon
+    icon: ps.svg
     skill: 10
   InDesign:
-    icon: Illustrator Icon
+    icon: id.svg
     skill: 20
   AfterEffects:
-    icon: Rhinoceros Icon
-    skill: 30
-  Rhinoceros:
-    icon: Illustrator Icon
-    skill: 40
-  Autocad:
-    icon: Rhinoceros Icon
+    icon: ae.svg
     skill: 50
+  Rhinoceros:
+    icon: rhinoceros.svg
+    skill: 70
+  Autocad:
+    icon: autocad.svg
+    skill: 100

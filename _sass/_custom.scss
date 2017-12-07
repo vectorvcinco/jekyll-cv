@@ -10,6 +10,7 @@
 .profile-pic {
   border-style: solid;
   border-width: $spacer;
+  border-color: theme-color(primary);
 }
 
 .profile-icon {
@@ -17,7 +18,18 @@
   width: $spacer*1.5;
 }
 
+li.skill {
+  img {
+    float: left;
+    width:3em;
+    height:3em;
+  }
+}
+
 .skill-meter {
+
+  width: 80%;
+  margin-left: $spacer*3.5;
 
   hr {
     border-top-width: $spacer/2;
@@ -36,7 +48,7 @@
       &.skill-#{$value*10} {
         background-position: percentage($value/10*.94) 0%;
         padding-top: $spacer*1.5;
-        padding-left: percentage($value/10*.80);
+        padding-left: percentage($value/10*.75);
       }
     }
 
