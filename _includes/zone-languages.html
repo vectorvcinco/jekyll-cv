@@ -9,11 +9,16 @@
       {% for app in site.languages %}
 
       <li class="list-group-item skill bg-secondary">
-        <span class="align-middle">{{ app[0] | upcase }}</span>
+        <span class="align-middle text-uppercase">{{ app[0] }}</span>
         <!--<img src="/assets/icons/{{ app[1].icon }}" alt="{{ app[0] }}">-->
         <div class="skill-meter">
           <div class="float-left skill-{{ app[1] }}">{{ app[1] }}%</div>
           <hr>
+        </div>
+        <div class="note font-weight-bold d-block">
+          {% if forloop.first %}
+          Native Speaker
+          {% endif %}
         </div>
       </li>
       {% endfor %}
