@@ -29,3 +29,23 @@ profile:
           2050 Bamako Place
           Washington, DC 20521-2050
   website: https://example.com
+
+software:
+  Illustrator:
+    icon: Illustrator Icon
+    skill: 0
+  Photoshop:
+    icon: Rhinoceros Icon
+    skill: 10
+  InDesign:
+    icon: Illustrator Icon
+    skill: 20
+  AfterEffects:
+    icon: Rhinoceros Icon
+    skill: 30
+  Rhinoceros:
+    icon: Illustrator Icon
+    skill: 40
+  Autocad:
+    icon: Rhinoceros Icon
+    skill: 50
