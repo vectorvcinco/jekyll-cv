@@ -1,0 +1,22 @@
+<div class="card my-3">
+
+    <div class="card-header bg-primary">
+      <h4 class="card-title">Languages</h4>
+    </div>
+
+    <ul class="list-group list-group-flush">
+
+      {% for app in site.languages %}
+
+      <li class="list-group-item skill bg-secondary">
+        <span class="align-middle">{{ app[0] | upcase }}</span>
+        <!--<img src="/assets/icons/{{ app[1].icon }}" alt="{{ app[0] }}">-->
+        <div class="skill-meter">
+          <div class="float-left skill-{{ app[1] }}">{{ app[1] }}%</div>
+          <hr>
+        </div>
+      </li>
+      {% endfor %}
+
+    </ul>
+</div>

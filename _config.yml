@@ -30,6 +30,11 @@ profile:
           Washington, DC 20521-2050
   website: https://example.com
 
+languages:
+  es: 100
+  en: 90
+  jp: 20
+
 software:
   Illustrator:
     icon: ai.svg

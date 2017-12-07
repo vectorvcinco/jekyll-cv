@@ -1,3 +1,5 @@
+// Declaration of color classes
+
 @each $color, $val in $colors {
   .bg-color-#{$color} {
     background-color: $val;
@@ -6,6 +8,8 @@
     color: $val;
   }
 }
+
+// Profile CSS
 
 .profile-pic {
   border-style: solid;
@@ -18,12 +22,21 @@
   width: $spacer*1.5;
 }
 
-li.skill {
+// Skill Meters CSS
+
+.skill {
   img {
     float: left;
-    width:3em;
-    height:3em;
+    width: $spacer*3;
+    height: $spacer*3;
   }
+
+  span {
+    float:left;
+    font-size: $spacer*2.5;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
 }
 
 .skill-meter {
