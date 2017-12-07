@@ -1,0 +1,7 @@
+<ul class="nav nav-pills">
+  {% for color in site.colors %}
+  <li class="nav-item p-1">
+    <a class="nav-link text-color-{{ color }}" href="#">{{ color }}</a>
+  </li>
+  {% endfor %}
+</ul>
