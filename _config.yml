@@ -17,6 +17,9 @@ colors:
   - gris2
   - tomato
 
+kramdown:
+  hard_wrap: true
+
 profile:
   name: Jane Doe
   tagline: Professional Assasin

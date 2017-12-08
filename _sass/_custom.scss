@@ -30,6 +30,31 @@
   }
 }
 
+// Main CSS
+
+.experience {
+
+  background-color: theme-color(secondary);
+  padding-bottom: $spacer;
+
+  h2 {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: theme-color(primary);
+    padding: $spacer/2 0 $spacer/2 0;
+
+    // Simulación de espacio en blanco
+    border-top-style: solid;
+    border-top-color: color("white");
+    border-top-width: $spacer;
+  }
+
+  p, ul {
+    padding-left: $spacer*2;
+    padding-right: $spacer*2;
+  }
+}
+
 // Skill Meters CSS
 
 .skill {
