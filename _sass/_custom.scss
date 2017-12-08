@@ -79,16 +79,32 @@
 
 .skill-meter {
 
+  $marker-size: $spacer*1.5;
+
+  @function marker-units($units: 1, $scale: true){
+
+    @if $scale {
+      @return $marker-size * $units*0.8;
+    }
+    @else {
+      @return $marker-size * $units;
+    }
+  }
+
+  @function marker-displacement($units){
+    @return (marker-units($units, false) + $marker-size/2)*0.8;
+  }
+
   width: 80%;
   margin-left: $spacer*3.5;
 
   hr {
     border-top-width: $spacer/2;
-    width: 85%
+    width: marker-units(10);
   }
 
   div {
-    height: $spacer*1.5;
+    height: $marker-size;
     width: 100%;
     background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8z"/></svg>');
     background-size: contain;
@@ -97,9 +113,9 @@
 
     @for $value from 0 through 10 {
       &.skill-#{$value*10} {
-        background-position: percentage($value/10*.94) 0%;
-        padding-top: $spacer*1.5;
-        padding-left: percentage($value/10*.75);
+        padding-top: $marker-size;
+        background-position: marker-displacement($value) 0% ;
+        padding-left: marker-displacement($value);
       }
     }
 
