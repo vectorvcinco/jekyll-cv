@@ -57,3 +57,27 @@ software:
   Autocad:
     icon: autocad.svg
     skill: 100
+
+otherskills:
+  machinery:
+    modeling:
+      icon: icon.svg
+      skills:
+        - 3D printing
+    cnc:
+      icon: icon.svg
+      skills:
+        - CNC Router
+        - Laser Cutting
+        - Vynil Cutting
+
+  administrative:
+    organization:
+      icon: icon.svg
+      skills:
+        - Slack
+        - Email
+    management:
+      icon: icon.svg
+      skills:
+        - Scrum

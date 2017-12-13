@@ -1,0 +1,22 @@
+{% for category in site.otherskills %}
+<div class="card my-3">
+
+  <div class="card-header bg-primary">
+    <h4 class="card-title text-capitalize">{{ category[0] }}</h4>
+  </div>
+
+  {% for subcategory in category[1] %}
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item bg-secondary">
+      <img class="float-left mr-3" style="width: 3rem;height:3rem;" src="/assets/icons/{{ subcategory[1].icon }}">
+      <ul class="list-unstyled d-flex flex-column">
+      {% for skill in subcategory[1].skills %}
+        <li>{{ skill }}</li>
+      {% endfor %}
+      </ul>
+    </li>
+  </ul>
+  {% endfor %}
+
+</div>
+{% endfor %}
