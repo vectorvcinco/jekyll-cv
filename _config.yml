@@ -40,32 +40,26 @@ languages:
 
 software:
   Illustrator:
-    icon: ai.svg
+    icon: android.svg
     skill: 0
-  Photoshop:
-    icon: ps.svg
-    skill: 10
-  InDesign:
-    icon: id.svg
-    skill: 20
   AfterEffects:
-    icon: ae.svg
+    icon: freebsd.svg
     skill: 50
   Rhinoceros:
-    icon: rhinoceros.svg
+    icon: github.svg
     skill: 70
   Autocad:
-    icon: autocad.svg
+    icon: line.svg
     skill: 100
 
 otherskills:
   machinery:
     modeling:
-      icon: icon.svg
+      icon: playstation.svg
       skills:
         - 3D printing
     cnc:
-      icon: icon.svg
+      icon: angular.svg
       skills:
         - CNC Router
         - Laser Cutting
@@ -73,11 +67,11 @@ otherskills:
 
   administrative:
     organization:
-      icon: icon.svg
+      icon: apple.svg
       skills:
         - Slack
         - Email
     management:
-      icon: icon.svg
+      icon: slack.svg
       skills:
         - Scrum
