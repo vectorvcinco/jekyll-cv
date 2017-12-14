@@ -1,52 +1,138 @@
-# vv5cv
+# vectorVcinco CVs
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+Hola, este es un tema de [Jekyll](https://jekyllrb.com) para hacer fácil la cración
+de un CV en inglés. Lo creamos en vectorVcinco para nuestros perfiles personales y lo liberamos
+bajo la licencia [MIT](https://opensource.org/licenses/MIT)
 
 
-## Installation
+Diseño: https://github.com/Itzelschiaffini
+Development: https://github.com/darkade
 
-Add this line to your Jekyll site's `Gemfile`:
+
+## Instalación
+
+Agrega esta linea al `Gemfile` de tu Jekyll site:
 
 ```ruby
 gem "vv5cv"
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+Agrega esta linea a tu `_config.yml`:
 
 ```yaml
 theme: vv5cv
 ```
 
-And then execute:
+Ejecuta:
 
     $ bundle
 
-Or install it yourself as:
+O instalalo tu mismo con:
 
     $ gem install vv5cv
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Este tema es una sola página con las siguientes secciones:
 
-## Contributing
+- Profile
+- Software
+- Languages
+- Other skills
+- Main
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+### Profile
+Contiene información general sobre tu teléfono, e-mail, dirección, sitio web.
 
-## Development
+Para poblar esta sección agrega esto a tu `_config.yml`
 
-To set up your environment to develop this theme, run `bundle install`.
+```yaml
+profile:
+  name: Jane Doe
+  tagline: Professional Assasin
+  picture: http://lorempixel.com/output/fashion-q-c-480-480-8.jpg
+  phone: +52(1) 222 000 0000
+  email: me@example.com
+  address: >-
+          The Honorable Charles W. Anderson (Dear Mr. Ambassador:)
+          Department of State
+          2050 Bamako Place
+          Washington, DC 20521-2050
+  website: https://example.com
+```
 
-Your theme is setup just like a normal Jekyll site! To test your theme, run `bundle exec jekyll serve` and open your browser at `http://localhost:4000`. This starts a Jekyll server using your theme. Add pages, documents, data, etc. like normal to test your theme's contents. As you make modifications to your theme and to your content, your site will regenerate and you should see the changes in the browser after a refresh, just like normal.
+### Software
+La información sobre tus skills con cierto software. Para agregar iconos colocalos en `assets/icons` y en la configuración solo coloca sus nombres con extensión
 
-When your theme is released, only the files in `_layouts`, `_includes`, `_sass` and `assets` tracked with Git will be bundled.
-To add a custom directory to your theme-gem, please edit the regexp in `vv5cv.gemspec` accordingly.
+Para poblar esta sección agrega esto a tu `_config.yml`
+
+```yaml
+software:
+  Illustrator:
+    icon: ai.svg
+    skill: 0
+  Photoshop:
+    icon: ps.svg
+    skill: 10
+  InDesign:
+    icon: id.svg
+    skill: 20
+```
+
+### Languages
+Los lenguajes que manejas. El primer lenguaje que enlistes será marcado con la leyenda _Native Speaker_
+
+Para poblar esta sección agrega esto a tu `_config.yml`
+
+```yaml
+languages:
+  es: 100
+  en: 90
+  jp: 20
+```
+
+### Other Skills
+Esta sección se poblará con una lista llamda other skills. Puedes poner cualquier skill categorizado aquí.
+
+Para poblar esta sección agrega esto a tu `_config.yml`
+
+```yaml
+otherskills:
+  machinery:
+    modeling:
+      icon: icon.svg
+      skills:
+        - 3D printing
+    cnc:
+      icon: icon.svg
+      skills:
+        - CNC Router
+        - Laser Cutting
+        - Vynil Cutting
+
+  administrative:
+    organization:
+      icon: icon.svg
+      skills:
+        - Slack
+        - Email
+    management:
+      icon: icon.svg
+      skills:
+        - Scrum
+```
+
+### Main
+
+En esta sección se colocará todo lo que escribas en tu `index.md` Puedes dividir las secciones marcando títulos. Puedes leer más sobre escribir en markdown [aquí](https://guides.github.com/features/mastering-markdown/)
+
+También te recomendamos agregar esta opción a tu `_config.yml`
+
+```yaml
+kramdown:
+  hard_wrap: true
+```
 
 ## License
 
-The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
+Este tema esta esta disponible en Open Source bajo los términos de la [MIT License](https://opensource.org/licenses/MIT).
